@@ -7,9 +7,10 @@
 void *loop_func(void *param)
 {
 	int i = 0;
-	fprintf(stdout, "%d thread start\n", *(int *)param);
+	fprintf(stdout, "[%d]thread start\n", *(int *)param);
 
-	while(1);
+	while(1)
+		usleep(1);
 }
 
 struct memory_alloc_unit{
@@ -42,10 +43,11 @@ int main(int argc, char ** argv[])
 	}
 	
 	tid = (pthread_t *)malloc(sizeof(pthread_t) * thread_num);
-	mem = (char *)malloc(sizeof(char) * memory_size * 1024 * 1024);	
+	mem = (struct memory_alloc_unit *)malloc(sizeof(struct memory_alloc_unit) * memory_size);	
 
-	for(i = 0; i < memory_size * 1024 * 1024; i++) {
-		mem[i] = 0;
+	for(i = 0; i < memory_size; i++) {
+		for(j = 0; j < MB; j++)
+			mem[i].byte_unit[j] = 0;
 	}
 
 	for(i = 0; i < thread_num; i++){
