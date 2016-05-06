@@ -1,0 +1,57 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CPU_info	resource.h	/^typedef struct CPU_info{$/;"	s
+FALSE	struct.h	9;"	d
+GB	burn_mem.c	4;"	d	file:
+GB	struct.h	6;"	d
+KB	struct.h	4;"	d
+LOGTIME	resource.h	4;"	d
+MB	struct.h	5;"	d
+TRUE	struct.h	8;"	d
+VM_usage	struct.h	/^typedef struct VM_usage{$/;"	s
+_cal_cpu_usage	resource.c	/^int _cal_cpu_usage(s_CPU * cpu_info, float * usage)$/;"	f
+_get_cpu_info	resource.c	/^int _get_cpu_info(s_CPU * cpu_info)$/;"	f
+bool	struct.h	10;"	d
+cpu_name	resource.h	/^	 char cpu_name[8];$/;"	m	struct:CPU_info
+cpu_usage	struct.h	/^	float cpu_usage;$/;"	m	struct:VM_usage
+disk_usage	struct.h	/^	float disk_usage;$/;"	m	struct:VM_usage
+g_str	test.c	/^char g_str[] = "Cpu(s): 17.2%us,  0.4%sy,  0.2%ni, 81.8%id,  0.4%wa,  0.0%hi,  0.0%si,  0.0%st";$/;"	v
+get_cpu_usage	resource.c	/^float get_cpu_usage(s_CPU * cpu_info)$/;"	f
+get_disk_usage	resource.c	/^float get_disk_usage()$/;"	f
+get_mem_usage	resource.c	/^float get_mem_usage()$/;"	f
+get_usage	resource.c	/^int get_usage(s_usage * buf, s_CPU *cpu_info)$/;"	f
+guest	resource.h	/^     unsigned int user, nice, sys, idle, iowait, irq, softirq, steal, guest, guest_nice;$/;"	m	struct:CPU_info
+guest_nice	resource.h	/^     unsigned int user, nice, sys, idle, iowait, irq, softirq, steal, guest, guest_nice;$/;"	m	struct:CPU_info
+idle	resource.h	/^     unsigned int user, nice, sys, idle, iowait, irq, softirq, steal, guest, guest_nice;$/;"	m	struct:CPU_info
+init_cpu_info	resource.c	/^int init_cpu_info(s_CPU * cpu_info)$/;"	f
+iowait	resource.h	/^     unsigned int user, nice, sys, idle, iowait, irq, softirq, steal, guest, guest_nice;$/;"	m	struct:CPU_info
+irq	resource.h	/^     unsigned int user, nice, sys, idle, iowait, irq, softirq, steal, guest, guest_nice;$/;"	m	struct:CPU_info
+main	burn.c	/^int main()$/;"	f
+main	burn_mem.c	/^int main()$/;"	f
+main	c_main.c	/^int main()$/;"	f
+main	test.c	/^int main()$/;"	f
+mem_usage	struct.h	/^	float mem_usage;$/;"	m	struct:VM_usage
+nice	resource.h	/^     unsigned int user, nice, sys, idle, iowait, irq, softirq, steal, guest, guest_nice;$/;"	m	struct:CPU_info
+prev_guest	resource.h	/^	 unsigned int prev_irq, prev_softirq, prev_steal, prev_guest, prev_guest_nice;$/;"	m	struct:CPU_info
+prev_guest_nice	resource.h	/^	 unsigned int prev_irq, prev_softirq, prev_steal, prev_guest, prev_guest_nice;$/;"	m	struct:CPU_info
+prev_idle	resource.h	/^	 unsigned int prev_user, prev_nice, prev_sys, prev_idle, prev_iowait;$/;"	m	struct:CPU_info
+prev_iowait	resource.h	/^	 unsigned int prev_user, prev_nice, prev_sys, prev_idle, prev_iowait;$/;"	m	struct:CPU_info
+prev_irq	resource.h	/^	 unsigned int prev_irq, prev_softirq, prev_steal, prev_guest, prev_guest_nice;$/;"	m	struct:CPU_info
+prev_nice	resource.h	/^	 unsigned int prev_user, prev_nice, prev_sys, prev_idle, prev_iowait;$/;"	m	struct:CPU_info
+prev_softirq	resource.h	/^	 unsigned int prev_irq, prev_softirq, prev_steal, prev_guest, prev_guest_nice;$/;"	m	struct:CPU_info
+prev_steal	resource.h	/^	 unsigned int prev_irq, prev_softirq, prev_steal, prev_guest, prev_guest_nice;$/;"	m	struct:CPU_info
+prev_sys	resource.h	/^	 unsigned int prev_user, prev_nice, prev_sys, prev_idle, prev_iowait;$/;"	m	struct:CPU_info
+prev_user	resource.h	/^	 unsigned int prev_user, prev_nice, prev_sys, prev_idle, prev_iowait;$/;"	m	struct:CPU_info
+remove_space	resource.c	/^void remove_space(char * str)$/;"	f
+remove_space	test.c	/^void remove_space(char * str)$/;"	f
+s_CPU	resource.h	/^}s_CPU;$/;"	t	typeref:struct:CPU_info
+s_usage	struct.h	/^}s_usage;$/;"	t	typeref:struct:VM_usage
+shell_command	resource.c	/^int shell_command(char * cmd_buf, void * result_buf)$/;"	f
+softirq	resource.h	/^     unsigned int user, nice, sys, idle, iowait, irq, softirq, steal, guest, guest_nice;$/;"	m	struct:CPU_info
+steal	resource.h	/^     unsigned int user, nice, sys, idle, iowait, irq, softirq, steal, guest, guest_nice;$/;"	m	struct:CPU_info
+sys	resource.h	/^     unsigned int user, nice, sys, idle, iowait, irq, softirq, steal, guest, guest_nice;$/;"	m	struct:CPU_info
+user	resource.h	/^     unsigned int user, nice, sys, idle, iowait, irq, softirq, steal, guest, guest_nice;$/;"	m	struct:CPU_info

@@ -1,0 +1,128 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DATETIME	struct.h	/^typedef struct DATETIME{$/;"	s
+DB	db.h	9;"	d
+FALSE	struct.h	10;"	d
+GB	struct.h	7;"	d
+GOLD_IMG	resource.h	7;"	d
+HOST	db.h	6;"	d
+HOST	struct.h	/^typedef struct HOST{$/;"	s
+HOST_IP	resource.h	4;"	d
+Host	create_tables.sql	/^CREATE TABLE Host($/;"	t
+Host.capable_cpu	create_tables.sql	/^	cpu INT NOT NULL,$/;"	F
+Host.capable_disk	create_tables.sql	/^	disk BIGINT NOT NULL,$/;"	F
+Host.capable_mem	create_tables.sql	/^	mem BIGINT NOT NULL,$/;"	F
+Host.cpu	create_tables.sql	/^	capable_disk BIGINT NOT NULL,$/;"	F
+Host.disk	create_tables.sql	/^	ip VARCHAR(128) NOT NULL PRIMARY KEY,$/;"	F
+Host.gross_vm_cnt	create_tables.sql	/^	capable_mem BIGINT NOT NULL,$/;"	F
+Host.ip	create_tables.sql	/^CREATE TABLE Host($/;"	F
+Host.live_vm_cnt	create_tables.sql	/^	gross_vm_cnt INT NOT NULL,$/;"	F
+Host.mem	create_tables.sql	/^	capable_cpu INT NOT NULL,$/;"	F
+KB	struct.h	5;"	d
+LOG	create_tables.sql	/^CREATE TABLE LOG($/;"	t
+LOG	struct.h	/^typedef struct LOG{$/;"	s
+LOG.cpu_usage	create_tables.sql	/^	disk_usage float(5, 2) NOT NULL,$/;"	F
+LOG.date_time	create_tables.sql	/^	sequence INT NOT NULL,$/;"	F
+LOG.disk_usage	create_tables.sql	/^	date_time DATETIME NOT NULL,$/;"	F
+LOG.log_num	create_tables.sql	/^CREATE TABLE LOG($/;"	F
+LOG.mem_usage	create_tables.sql	/^	cpu_usage float(5, 2) NOT NULL,$/;"	F
+LOG.name	create_tables.sql	/^	log_num INT NOT NULL AUTO_INCREMENT PRIMARY KEY,$/;"	F
+LOG.sequence	create_tables.sql	/^	name VARCHAR(64) NOT NULL,$/;"	F
+MAX_VM_CNT	resource.h	6;"	d
+MB	struct.h	6;"	d
+MOUNT_DIR	resource.h	5;"	d
+PASS	db.h	8;"	d
+TRUE	struct.h	9;"	d
+USER	db.h	7;"	d
+VM	create_tables.sql	/^CREATE TABLE VM($/;"	t
+VM	struct.h	/^typedef struct VM{$/;"	s
+VM.alloc_cpu	create_tables.sql	/^	vec_disk INT NOT NULL,$/;"	F
+VM.alloc_disk	create_tables.sql	/^	port INT,$/;"	F
+VM.alloc_mem	create_tables.sql	/^	vec_cpu INT NOT NULL,$/;"	F
+VM.ip	create_tables.sql	/^	name VARCHAR(64) NOT NULL PRIMARY KEY,$/;"	F
+VM.is_run	create_tables.sql	/^	vec_mem INT NOT NULL,$/;"	F
+VM.name	create_tables.sql	/^CREATE TABLE VM($/;"	F
+VM.port	create_tables.sql	/^	ip VARCHAR(128),$/;"	F
+VM.req_cpu	create_tables.sql	/^	alloc_cpu INT NOT NULL,$/;"	F
+VM.req_disk	create_tables.sql	/^	alloc_disk BIGINT NOT NULL,$/;"	F
+VM.req_mem	create_tables.sql	/^	alloc_mem BIGINT NOT NULL,$/;"	F
+VM.vec_cpu	create_tables.sql	/^	req_cpu INT NOT NULL,$/;"	F
+VM.vec_disk	create_tables.sql	/^	req_disk BIGINT NOT NULL,$/;"	F
+VM.vec_mem	create_tables.sql	/^	req_mem BIGINT NOT NULL,$/;"	F
+VM_usage	struct.h	/^typedef struct VM_usage{$/;"	s
+_get_capa_cpu	resource.c	/^int _get_capa_cpu(int * cpus)$/;"	f
+_get_capa_disk	resource.c	/^int _get_capa_disk(unsigned long long * disks)$/;"	f
+_get_capa_mem	resource.c	/^int _get_capa_mem(unsigned long long * mems)$/;"	f
+_get_gross_cpu	resource.c	/^int _get_gross_cpu(int * cpus)$/;"	f
+_get_gross_disk	resource.c	/^int _get_gross_disk(unsigned long long * disks)$/;"	f
+_get_gross_mem	resource.c	/^int _get_gross_mem(unsigned long long * mems)$/;"	f
+_get_gross_vm_cnt	resource.c	/^int _get_gross_vm_cnt()$/;"	f
+_get_live_vm_cnt	resource.c	/^int _get_live_vm_cnt()$/;"	f
+_get_vm_name	resource.c	/^int _get_vm_name(char vm_name[][64])$/;"	f
+alloc_cpu	struct.h	/^	int alloc_cpu;$/;"	m	struct:VM
+alloc_disk	struct.h	/^	unsigned long long alloc_disk;$/;"	m	struct:VM
+alloc_mem	struct.h	/^	unsigned long long alloc_mem;$/;"	m	struct:VM
+bool	struct.h	11;"	d
+capable_cpu	struct.h	/^	int capable_cpu;$/;"	m	struct:HOST
+capable_disk	struct.h	/^	unsigned long long capable_disk;$/;"	m	struct:HOST
+capable_mem	struct.h	/^	unsigned long long capable_mem;$/;"	m	struct:HOST
+cfd	server.c	/^    int cfd;$/;"	m	struct:param	file:
+close_conn	db.c	/^void close_conn(MYSQL * conn)$/;"	f
+conn	struct.h	/^	MYSQL conn;$/;"	m	struct:t_param
+cpu	struct.h	/^	int cpu;$/;"	m	struct:HOST
+cpu_usage	struct.h	/^	float cpu_usage;$/;"	m	struct:VM_usage
+date_time	struct.h	/^	s_datetime date_time;$/;"	m	struct:LOG
+day	struct.h	/^	int year, month, day;$/;"	m	struct:DATETIME
+disk	struct.h	/^	unsigned long long disk;$/;"	m	struct:HOST
+fd	struct.h	/^	int fd;$/;"	m	struct:t_param
+function	server.c	/^void *function(void *_param)$/;"	f
+gross_vm_cnt	struct.h	/^	int gross_vm_cnt;$/;"	m	struct:HOST
+hi_client	my_socket.c	/^int hi_client(int s_fd, s_thr_param * param, struct sockaddr_in * c_addr)$/;"	f
+hour	struct.h	/^	int hour, minute, second;$/;"	m	struct:DATETIME
+init_conn	db.c	/^int init_conn(MYSQL * conn)$/;"	f
+init_host	resource.c	/^int init_host(s_host * host_info)$/;"	f
+init_socket	my_socket.c	/^int init_socket(int * fd, struct sockaddr_in * addr)$/;"	f
+ip	server.c	/^    char ip[INET_ADDRSTRLEN];$/;"	m	struct:param	file:
+ip	struct.h	/^	char ip[128];$/;"	m	struct:HOST
+ip	struct.h	/^	char ip[128];$/;"	m	struct:VM
+ip	struct.h	/^	char ip[128];$/;"	m	struct:t_param
+is_run	struct.h	/^	bool is_run;$/;"	m	struct:VM
+live_vm_cnt	struct.h	/^	int live_vm_cnt;$/;"	m	struct:HOST
+log_num	struct.h	/^	int log_num;$/;"	m	struct:LOG
+main	main.c	/^int main()$/;"	f
+main	server.c	/^int main()$/;"	f
+max_vm_cnt	struct.h	/^	int max_vm_cnt;$/;"	m	struct:HOST
+mem	struct.h	/^	unsigned long long mem;$/;"	m	struct:HOST
+mem_usage	struct.h	/^	float mem_usage;$/;"	m	struct:VM_usage
+minute	struct.h	/^	int hour, minute, second;$/;"	m	struct:DATETIME
+monitor_host	resource.c	/^int monitor_host(s_host * host_info)$/;"	f
+month	struct.h	/^	int year, month, day;$/;"	m	struct:DATETIME
+name	struct.h	/^	char name[64];$/;"	m	struct:LOG
+name	struct.h	/^	char name[64];$/;"	m	struct:VM
+param	server.c	/^struct param$/;"	s	file:
+port	struct.h	/^	int port;$/;"	m	struct:VM
+remove_space	resource.c	/^void remove_space(char * str)$/;"	f
+req_cpu	struct.h	/^	int req_cpu;$/;"	m	struct:VM
+req_disk	struct.h	/^	unsigned long long req_disk;$/;"	m	struct:VM
+req_mem	struct.h	/^	unsigned long long req_mem;$/;"	m	struct:VM
+s_datetime	struct.h	/^}s_datetime;$/;"	t	typeref:struct:DATETIME
+s_host	struct.h	/^}s_host;$/;"	t	typeref:struct:HOST
+s_log	struct.h	/^}s_log;$/;"	t	typeref:struct:LOG
+s_thr_param	struct.h	/^}s_thr_param;$/;"	t	typeref:struct:t_param
+s_usage	struct.h	/^}s_usage;$/;"	t	typeref:struct:VM_usage
+s_vm	struct.h	/^}s_vm;$/;"	t	typeref:struct:VM
+second	struct.h	/^	int hour, minute, second;$/;"	m	struct:DATETIME
+sequence	struct.h	/^	int sequence;$/;"	m	struct:LOG
+shell_command	resource.c	/^int shell_command(char * cmd_buf, void * result_buf)$/;"	f
+t_param	struct.h	/^typedef struct t_param{$/;"	s
+thr_mon_server	my_thread.c	/^void * thr_mon_server(void* _param)$/;"	f
+thread_main	my_thread.c	/^void * thread_main(void * _param)$/;"	f
+usage	struct.h	/^	s_usage usage;$/;"	m	struct:LOG
+vec_cpu	struct.h	/^	int vec_cpu;$/;"	m	struct:VM
+vec_disk	struct.h	/^	int vec_disk;$/;"	m	struct:VM
+vec_mem	struct.h	/^	int vec_mem;	 $/;"	m	struct:VM
+year	struct.h	/^	int year, month, day;$/;"	m	struct:DATETIME
