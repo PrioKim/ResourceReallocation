@@ -42,24 +42,29 @@ int main(int argc, char ** argv[])
 		fprintf(stdout, "mem stress size : %dMB\n", memory_size);
 	}
 	
-	tid = (pthread_t *)malloc(sizeof(pthread_t) * thread_num);
-	mem = (struct memory_alloc_unit *)malloc(sizeof(struct memory_alloc_unit) * memory_size);	
 
-	for(i = 0; i < memory_size; i++) {
-		for(j = 0; j < MB; j++)
-			mem[i].byte_unit[j] = 0;
+	if(memory_alloc_unit) {
+		mem = (struct memory_alloc_unit *)malloc(sizeof(struct memory_alloc_unit) * memory_size);	
+
+		for(i = 0; i < memory_size; i++) {
+			for(j = 0; j < MB; j++)
+				mem[i].byte_unit[j] = 0;
+		}
+			
+		free(mem);
 	}
 
-	for(i = 0; i < thread_num; i++){
-		pthread_create(&tid[i], NULL, loop_func, (void *)&i);
+	if(thread_num) {
+		tid = (pthread_t *)malloc(sizeof(pthread_t) * thread_num);
+		for(i = 0; i < thread_num; i++){
+			pthread_create(&tid[i], NULL, loop_func, (void *)&i);
+		}
+
+		for(i = 0; i < thread_num; i++) {
+			pthread_join(tid[i], (void **)&status);
+		}
 	}
 
-	for(i = 0; i < thread_num; i++) {
-		pthread_join(tid[i], (void **)&status);
-	}
-
-
-	free(mem);
 	fprintf(stdout, "main exit\n");
 
 	return 0;
