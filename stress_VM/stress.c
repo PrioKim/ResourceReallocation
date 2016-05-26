@@ -43,7 +43,7 @@ int main(int argc, char ** argv[])
 	}
 	
 
-	if(memory_alloc_unit) {
+	if(memory_size) {
 		mem = (struct memory_alloc_unit *)malloc(sizeof(struct memory_alloc_unit) * memory_size);	
 
 		for(i = 0; i < memory_size; i++) {
