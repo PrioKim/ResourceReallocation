@@ -2,7 +2,7 @@
 #include <math.h>
 #include <stdlib.h>
 
-#define VM_COUNT	4
+#define VM_COUNT	6
 #define TOTAL_RESOURCE	16
 #define RESOURCE_LIMIT	TOTAL_RESOURCE * 0.66
 #define AGING_CONST	0.99f
@@ -13,8 +13,8 @@ int consumed_resource_all_VM = 0; // c
 //int consumed_resource_each_vm[10] = { 0 };//V
 int consumed_resource_each_vm[30] = { 4, 2, 1, 1, 0 };//V
 //int demand_of_vm[10] = { 2,8,8,6,0 }; // D
-int demand_of_vm[30] = { 4, 7, 8, 3, 0 }; // D
-float weighted_vector[30] = { 0.5f, 0.8f, 0.3f, 0.4f, 0 };//W
+int demand_of_vm[30] = { 4, 7, 8, 3, 2, 10, 0 }; // D
+float weighted_vector[30] = { 0.5f, 0.8f, 0.3f, 0.4f, 0.9f, 0.1f, 0 };//W
 float want_assign_resource[30] = { 0, }; //A
 float usage_each_vm[30] = { 0.9f, 0.9f, 0.99f, 0.99f, 0 };//U
 
@@ -82,13 +82,12 @@ int Allocation(){
 		}
 		else // 자원 할당 불가능
 		{
-			return 0;
+			return -1;
 		}
 
 		consumed_resource_all_VM += consumed_resource_each_vm[n]; // 할당한 총 자원 증가
 		want_assign_resource[n] = 0; // 자원이 할당된 VM의 a_i = 0
 		remain_vm_cnt--; // 자원 할당
-		n = VM_COUNT - 1;
 
 		assign_sum = 0;
 		for (i = 0; i < VM_COUNT; i++)
@@ -97,35 +96,54 @@ int Allocation(){
 		for (i = 0; i < VM_COUNT; i++){
 			want_assign_resource[i] = (want_assign_resource[i] / assign_sum) * (TOTAL_RESOURCE - consumed_resource_all_VM);
 
-			fprintf(stdout, "a_i = %f\n", want_assign_resource[i]);
+			fprintf(stdout, "a_%d = %f\n", i, want_assign_resource[i]);
 		}
-		return 1;
+		return 0;
 	}
-	return 2;
+	return -1;
 }
 
-int RUF()
+//int RUF()
+//{
+//	int ruf_r;
+//	print_info();
+//	int r = Allocation();
+//	aging();
+//	if (remain_vm_cnt == 0)
+//		return -1;	
+//	else if (r == 0 || r == 2)	{
+//		n--;
+//		if (n < 0)
+//			n = VM_COUNT-1;
+//		ruf_r = RUF();
+//	}
+//	else  if (r == 1)	{
+//		ruf_r = RUF();
+//	}
+//	if (ruf_r == -1)
+//		return -1;
+//
+//	return 0;
+//}
+
+void RUF()
 {
-	int ruf_r;
 	print_info();
 	int r = Allocation();
 	aging();
-	if (remain_vm_cnt == 0)
-		return -1;	
-	else if (r == 0 || r == 2)	{
-		n--;
-		if (n < 0)
-			n = VM_COUNT-1;
-		ruf_r = RUF();
-	}
-	else  if (r == 1)	{
-		ruf_r = RUF();
-	}
-	if (ruf_r == -1)
-		return -1;
 
-	return 0;
+	if (remain_vm_cnt == 0)
+		return;
+	else  if (r == 0 || n == 0 ){
+		n = VM_COUNT - 1;
+		RUF();
+	}
+	else { //
+		n--;
+		RUF();
+	}
 }
+
 
 int main()
 {
