@@ -7,7 +7,8 @@
 void *loop_func(void *param)
 {
 	int i = 0;
-	fprintf(stdout, "[%d]thread start\n", *(int *)param);
+	
+	//fprintf(stdout, "[%d]thread start\n", *(int *)param);
 
 	while(1)
 		usleep(1);
@@ -20,7 +21,7 @@ struct memory_alloc_unit{
 // argv[1] : thread num 
 // argv[2] : memory allocation size (MB)
 
-int main(int argc, char ** argv[])
+int main(int argc, char * argv[])
 {
 	int thread_num;
 	int memory_size;
@@ -41,17 +42,16 @@ int main(int argc, char ** argv[])
 		fprintf(stdout, "thread num : %d\n", thread_num);
 		fprintf(stdout, "mem stress size : %dMB\n", memory_size);
 	}
-	
+
 
 	if(memory_size) {
 		mem = (struct memory_alloc_unit *)malloc(sizeof(struct memory_alloc_unit) * memory_size);	
 
 		for(i = 0; i < memory_size; i++) {
 			for(j = 0; j < MB; j++)
-				mem[i].byte_unit[j] = 0;
+				mem[i].byte_unit[j] = i*j;
 		}
-			
-		free(mem);
+
 	}
 
 	if(thread_num) {
