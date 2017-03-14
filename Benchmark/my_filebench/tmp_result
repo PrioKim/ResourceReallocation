@@ -1,0 +1,28 @@
+Filebench Version 1.4.9.1
+ 2338: 0.000: Allocated 170MB of shared memory
+ 2338: 0.007: File-server Version 3.0 personality successfully loaded
+ 2338: 0.007: Creating/pre-allocating files and filesets
+ 2338: 0.019: Fileset bigfileset: 10000 files, 0 leafdirs, avg dir width = 20, avg dir depth = 3.1, 1240.757MB
+ 2338: 0.529: Removed any existing fileset bigfileset in 1 seconds
+ 2338: 0.529: making tree for filset /tmp/bigfileset
+ 2338: 0.595: Creating fileset bigfileset...
+ 2338: 1.714: Preallocated 7979 of 10000 of fileset bigfileset in 2 seconds
+ 2338: 1.714: waiting for fileset pre-allocation to finish
+ 2342: 1.714: Starting 1 filereader instances
+ 2343: 1.716: Starting 50 filereaderthread threads
+ 2338: 2.718: Running...
+ 2338: 62.725: Run took 60 seconds...
+ 2338: 62.727: Per-Operation Breakdown
+statfile1            45910ops      765ops/s   0.0mb/s      0.0ms/op     3097us/op-cpu [0ms - 3ms]
+deletefile1          45913ops      765ops/s   0.0mb/s      9.9ms/op     3347us/op-cpu [0ms - 5056ms]
+closefile3           45919ops      765ops/s   0.0mb/s      0.0ms/op     3093us/op-cpu [0ms - 3ms]
+readfile1            45924ops      765ops/s  99.4mb/s      0.1ms/op     3088us/op-cpu [0ms - 4ms]
+openfile2            45931ops      765ops/s   0.0mb/s      0.0ms/op     3091us/op-cpu [0ms - 8ms]
+closefile2           45935ops      766ops/s   0.0mb/s      0.0ms/op     3093us/op-cpu [0ms - 1ms]
+appendfilerand1      45942ops      766ops/s   6.0mb/s      0.0ms/op     3003us/op-cpu [0ms - 2ms]
+openfile1            45945ops      766ops/s   0.0mb/s      0.0ms/op     3045us/op-cpu [0ms - 5ms]
+closefile1           45946ops      766ops/s   0.0mb/s      0.0ms/op     2979us/op-cpu [0ms - 2ms]
+wrtfile1             45953ops      766ops/s  95.1mb/s      0.1ms/op     3151us/op-cpu [0ms - 3ms]
+createfile1          45957ops      766ops/s   0.0mb/s      6.8ms/op     3434us/op-cpu [0ms - 5073ms]
+ 2338: 62.727: IO Summary: 505275 ops, 8420.388 ops/s, (765/1531 r/w), 200.6mb/s,    447us cpu/op,   5.7ms latency
+ 2338: 62.727: Shutting down processes

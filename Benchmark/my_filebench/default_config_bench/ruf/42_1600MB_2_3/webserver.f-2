@@ -1,0 +1,53 @@
+Filebench Version 1.4.9.1
+ 2663: 0.000: Allocated 170MB of shared memory
+ 2663: 0.005: Web-server Version 3.0 personality successfully loaded
+ 2663: 0.005: Creating/pre-allocating files and filesets
+ 2663: 0.006: Fileset logfiles: 1 files, 0 leafdirs, avg dir width = 20, avg dir depth = 0.0, 0.002MB
+ 2663: 0.013: Removed any existing fileset logfiles in 1 seconds
+ 2663: 0.013: making tree for filset /tmp/logfiles
+ 2663: 0.013: Creating fileset logfiles...
+ 2663: 0.013: Preallocated 1 of 1 of fileset logfiles in 1 seconds
+ 2663: 0.014: Fileset bigfileset: 1000 files, 0 leafdirs, avg dir width = 20, avg dir depth = 2.3, 14.760MB
+ 2663: 0.472: Removed any existing fileset bigfileset in 1 seconds
+ 2663: 0.472: making tree for filset /tmp/bigfileset
+ 2663: 0.474: Creating fileset bigfileset...
+ 2663: 0.535: Preallocated 1000 of 1000 of fileset bigfileset in 1 seconds
+ 2663: 0.535: waiting for fileset pre-allocation to finish
+ 2667: 0.535: Starting 1 filereader instances
+ 2668: 0.542: Starting 100 filereaderthread threads
+ 2663: 1.544: Running...
+ 2663: 61.550: Run took 60 seconds...
+ 2663: 61.697: Per-Operation Breakdown
+appendlog            29873ops      498ops/s   3.9mb/s      0.0ms/op     2731us/op-cpu [0ms - 5ms]
+closefile10          29776ops      496ops/s   0.0mb/s      0.0ms/op     2807us/op-cpu [0ms - 4ms]
+readfile10           29781ops      496ops/s   7.4mb/s      0.0ms/op     2831us/op-cpu [0ms - 4ms]
+openfile10           29785ops      496ops/s   0.0mb/s      0.1ms/op     2864us/op-cpu [0ms - 24ms]
+closefile9           29792ops      496ops/s   0.0mb/s      0.0ms/op     2744us/op-cpu [0ms - 2ms]
+readfile9            29799ops      497ops/s   7.3mb/s      0.0ms/op     2839us/op-cpu [0ms - 8ms]
+openfile9            29802ops      497ops/s   0.0mb/s      0.1ms/op     2877us/op-cpu [0ms - 38ms]
+closefile8           29807ops      497ops/s   0.0mb/s      0.0ms/op     2783us/op-cpu [0ms - 5ms]
+readfile8            29810ops      497ops/s   7.3mb/s      0.0ms/op     2837us/op-cpu [0ms - 6ms]
+openfile8            29814ops      497ops/s   0.0mb/s      0.1ms/op     2890us/op-cpu [0ms - 27ms]
+closefile7           29814ops      497ops/s   0.0mb/s      0.0ms/op     2809us/op-cpu [0ms - 5ms]
+readfile7            29816ops      497ops/s   7.3mb/s      0.0ms/op     2793us/op-cpu [0ms - 7ms]
+openfile7            29820ops      497ops/s   0.0mb/s      0.1ms/op     2853us/op-cpu [0ms - 22ms]
+closefile6           29825ops      497ops/s   0.0mb/s      0.0ms/op     2808us/op-cpu [0ms - 5ms]
+readfile6            29827ops      497ops/s   7.3mb/s      0.0ms/op     2819us/op-cpu [0ms - 6ms]
+openfile6            29830ops      497ops/s   0.0mb/s      0.1ms/op     2876us/op-cpu [0ms - 25ms]
+closefile5           29831ops      497ops/s   0.0mb/s      0.0ms/op     2807us/op-cpu [0ms - 5ms]
+readfile5            29835ops      497ops/s   7.4mb/s      0.0ms/op     2802us/op-cpu [0ms - 4ms]
+openfile5            29838ops      497ops/s   0.0mb/s      0.1ms/op     2885us/op-cpu [0ms - 27ms]
+closefile4           29840ops      497ops/s   0.0mb/s      0.0ms/op     2758us/op-cpu [0ms - 4ms]
+readfile4            29844ops      497ops/s   7.3mb/s      0.0ms/op     2817us/op-cpu [0ms - 7ms]
+openfile4            29847ops      497ops/s   0.0mb/s      0.1ms/op     2879us/op-cpu [0ms - 25ms]
+closefile3           29848ops      497ops/s   0.0mb/s      0.0ms/op     2779us/op-cpu [0ms - 4ms]
+readfile3            29848ops      497ops/s   7.3mb/s      0.0ms/op     2839us/op-cpu [0ms - 6ms]
+openfile3            29854ops      498ops/s   0.0mb/s      0.1ms/op     2860us/op-cpu [0ms - 35ms]
+closefile2           29857ops      498ops/s   0.0mb/s      0.0ms/op     2799us/op-cpu [0ms - 13ms]
+readfile2            29857ops      498ops/s   7.3mb/s      0.0ms/op     2836us/op-cpu [0ms - 7ms]
+openfile2            29860ops      498ops/s   0.0mb/s      0.1ms/op     2870us/op-cpu [0ms - 22ms]
+closefile1           29865ops      498ops/s   0.0mb/s      0.0ms/op     2735us/op-cpu [0ms - 5ms]
+readfile1            29868ops      498ops/s   7.3mb/s      0.0ms/op     2764us/op-cpu [0ms - 4ms]
+openfile1            29870ops      498ops/s   0.0mb/s      0.1ms/op     2913us/op-cpu [0ms - 30ms]
+ 2663: 61.697: IO Summary: 924733 ops, 15410.957 ops/s, (4971/498 r/w),  77.2mb/s,    280us cpu/op,   0.1ms latency
+ 2663: 61.697: Shutting down processes

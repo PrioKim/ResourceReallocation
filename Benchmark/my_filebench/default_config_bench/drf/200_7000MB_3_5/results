@@ -1,0 +1,9 @@
+fileserver.f-0 : 2301: 77.824: IO Summary: 99656 ops, 1651.635 ops/s, (150/301 r/w), 38.6mb/s, 6532us cpu/op, 101.9ms latency
+webserver.f-0 : 2362: 110.877: IO Summary: 50966 ops, 849.352 ops/s, (274/28 r/w), 4.2mb/s, 10119us cpu/op, 30.8ms latency
+varmail.f-0 : 2473: 66.425: IO Summary: 40026 ops, 667.032 ops/s, (103/103 r/w), 2.4mb/s, 14010us cpu/op, 48.0ms latency
+fileserver.f-1 : 2498: 93.809: IO Summary: 70003 ops, 1166.555 ops/s, (106/213 r/w), 27.0mb/s, 9375us cpu/op, 87.6ms latency
+webserver.f-1 : 2560: 104.973: IO Summary: 41587 ops, 693.067 ops/s, (223/23 r/w), 3.4mb/s, 12022us cpu/op, 42.6ms latency
+varmail.f-1 : 2671: 64.728: IO Summary: 64189 ops, 1069.739 ops/s, (164/165 r/w), 4.6mb/s, 8911us cpu/op, 48.1ms latency
+fileserver.f-2 : 2696: 87.609: IO Summary: 96485 ops, 1591.931 ops/s, (145/290 r/w), 37.2mb/s, 6779us cpu/op, 75.1ms latency
+webserver.f-2 : 2757: 80.341: IO Summary: 143449 ops, 2388.244 ops/s, (770/78 r/w), 12.0mb/s, 3546us cpu/op, 9.6ms latency
+varmail.f-2 : 2868: 64.733: IO Summary: 394816 ops, 6579.399 ops/s, (1012/1012 r/w), 37.9mb/s, 1434us cpu/op, 7.5ms latency

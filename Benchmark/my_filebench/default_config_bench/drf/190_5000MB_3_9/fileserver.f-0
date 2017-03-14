@@ -1,0 +1,28 @@
+Filebench Version 1.4.9.1
+ 2290: 0.000: Allocated 170MB of shared memory
+ 2290: 0.004: File-server Version 3.0 personality successfully loaded
+ 2290: 0.005: Creating/pre-allocating files and filesets
+ 2290: 0.012: Fileset bigfileset: 10000 files, 0 leafdirs, avg dir width = 20, avg dir depth = 3.1, 1240.757MB
+ 2290: 0.397: Removed any existing fileset bigfileset in 1 seconds
+ 2290: 0.397: making tree for filset /tmp/bigfileset
+ 2290: 0.413: Creating fileset bigfileset...
+ 2290: 1.594: Preallocated 7979 of 10000 of fileset bigfileset in 2 seconds
+ 2290: 1.594: waiting for fileset pre-allocation to finish
+ 2293: 1.722: Starting 1 filereader instances
+ 2294: 1.742: Starting 50 filereaderthread threads
+ 2290: 10.932: Running...
+ 2290: 70.939: Run took 60 seconds...
+ 2290: 70.941: Per-Operation Breakdown
+statfile1            8653ops      144ops/s   0.0mb/s      0.0ms/op     3253us/op-cpu [0ms - 11ms]
+deletefile1          8663ops      144ops/s   0.0mb/s     65.0ms/op     6036us/op-cpu [0ms - 4322ms]
+closefile3           8674ops      145ops/s   0.0mb/s      0.0ms/op     3177us/op-cpu [0ms - 2ms]
+readfile1            8679ops      145ops/s  18.2mb/s      0.4ms/op     3515us/op-cpu [0ms - 265ms]
+openfile2            8685ops      145ops/s   0.0mb/s      0.6ms/op     3366us/op-cpu [0ms - 153ms]
+closefile2           8689ops      145ops/s   0.0mb/s      0.0ms/op     3137us/op-cpu [0ms - 11ms]
+appendfilerand1      8691ops      145ops/s   1.1mb/s      0.1ms/op     3222us/op-cpu [0ms - 221ms]
+openfile1            8693ops      145ops/s   0.0mb/s      0.9ms/op     3479us/op-cpu [0ms - 220ms]
+closefile1           8696ops      145ops/s   0.0mb/s      0.0ms/op     3303us/op-cpu [0ms - 169ms]
+wrtfile1             8699ops      145ops/s  18.0mb/s      0.4ms/op     3408us/op-cpu [0ms - 282ms]
+createfile1          8699ops      145ops/s   0.0mb/s     35.5ms/op     5787us/op-cpu [0ms - 4254ms]
+ 2290: 70.941: IO Summary: 95521 ops, 1591.840 ops/s, (145/290 r/w),  37.3mb/s,   6822us cpu/op,  34.2ms latency
+ 2290: 70.941: Shutting down processes

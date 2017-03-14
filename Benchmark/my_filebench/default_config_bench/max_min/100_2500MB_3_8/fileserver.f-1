@@ -1,0 +1,28 @@
+Filebench Version 1.4.9.1
+ 2399: 0.000: Allocated 170MB of shared memory
+ 2399: 0.005: File-server Version 3.0 personality successfully loaded
+ 2399: 0.005: Creating/pre-allocating files and filesets
+ 2399: 0.014: Fileset bigfileset: 10000 files, 0 leafdirs, avg dir width = 20, avg dir depth = 3.1, 1240.757MB
+ 2399: 0.061: Removed any existing fileset bigfileset in 1 seconds
+ 2399: 0.061: making tree for filset /tmp/bigfileset
+ 2399: 0.084: Creating fileset bigfileset...
+ 2399: 1.322: Preallocated 7979 of 10000 of fileset bigfileset in 2 seconds
+ 2399: 1.322: waiting for fileset pre-allocation to finish
+ 2402: 1.322: Starting 1 filereader instances
+ 2403: 1.334: Starting 50 filereaderthread threads
+ 2399: 2.337: Running...
+ 2399: 62.347: Run took 60 seconds...
+ 2399: 62.349: Per-Operation Breakdown
+statfile1            22569ops      376ops/s   0.0mb/s      0.0ms/op     1853us/op-cpu [0ms - 63ms]
+deletefile1          22569ops      376ops/s   0.0mb/s     43.7ms/op     3839us/op-cpu [0ms - 3674ms]
+closefile3           22586ops      376ops/s   0.0mb/s      0.0ms/op     1722us/op-cpu [0ms - 1ms]
+readfile1            22586ops      376ops/s  48.3mb/s      0.1ms/op     1865us/op-cpu [0ms - 88ms]
+openfile2            22586ops      376ops/s   0.0mb/s      0.1ms/op     1783us/op-cpu [0ms - 32ms]
+closefile2           22586ops      376ops/s   0.0mb/s      0.0ms/op     1683us/op-cpu [0ms - 1ms]
+appendfilerand1      22586ops      376ops/s   2.9mb/s      0.0ms/op     1833us/op-cpu [0ms - 82ms]
+openfile1            22586ops      376ops/s   0.0mb/s      0.2ms/op     1918us/op-cpu [0ms - 48ms]
+closefile1           22586ops      376ops/s   0.0mb/s      0.0ms/op     1895us/op-cpu [0ms - 2ms]
+wrtfile1             22586ops      376ops/s  46.7mb/s      0.2ms/op     2052us/op-cpu [0ms - 64ms]
+createfile1          22586ops      376ops/s   0.0mb/s     31.2ms/op     3125us/op-cpu [0ms - 3682ms]
+ 2399: 62.349: IO Summary: 248412 ops, 4139.567 ops/s, (376/753 r/w),  97.9mb/s,   1780us cpu/op,  25.2ms latency
+ 2399: 62.349: Shutting down processes

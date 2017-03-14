@@ -1,0 +1,32 @@
+Filebench Version 1.4.9.1
+ 2890: 0.000: Allocated 170MB of shared memory
+ 2890: 0.448: Varmail Version 3.0 personality successfully loaded
+ 2890: 0.448: Creating/pre-allocating files and filesets
+ 2890: 0.449: Fileset bigfileset: 1000 files, 0 leafdirs, avg dir width = 1000000, avg dir depth = 0.5, 14.959MB
+ 2890: 3.896: Removed any existing fileset bigfileset in 4 seconds
+ 2890: 3.897: making tree for filset /tmp/bigfileset
+ 2890: 3.897: Creating fileset bigfileset...
+ 2890: 6.879: Preallocated 805 of 1000 of fileset bigfileset in 3 seconds
+ 2890: 6.879: waiting for fileset pre-allocation to finish
+ 2893: 7.745: Starting 1 filereader instances
+ 2894: 8.780: Starting 16 filereaderthread threads
+ 2890: 24.403: Waiting for pid 2894 thread filereaderthread-16
+ 2890: 25.403: Waiting for pid 2894 thread filereaderthread-16
+ 2890: 26.403: Running...
+ 2890: 86.408: Run took 60 seconds...
+ 2890: 86.409: Per-Operation Breakdown
+closefile4           458ops        8ops/s   0.0mb/s      0.0ms/op      939us/op-cpu [0ms - 0ms]
+readfile4            460ops        8ops/s   0.1mb/s      0.2ms/op     1130us/op-cpu [0ms - 21ms]
+openfile4            460ops        8ops/s   0.0mb/s      1.3ms/op      870us/op-cpu [0ms - 148ms]
+closefile3           461ops        8ops/s   0.0mb/s      0.0ms/op     1041us/op-cpu [0ms - 0ms]
+fsyncfile3           463ops        8ops/s   0.0mb/s     47.1ms/op     2441us/op-cpu [1ms - 652ms]
+appendfilerand3      463ops        8ops/s   0.0mb/s      0.1ms/op     1123us/op-cpu [0ms - 21ms]
+readfile3            464ops        8ops/s   0.1mb/s      3.1ms/op     1056us/op-cpu [0ms - 1444ms]
+openfile3            464ops        8ops/s   0.0mb/s      1.7ms/op      841us/op-cpu [0ms - 148ms]
+closefile2           466ops        8ops/s   0.0mb/s      0.2ms/op     1073us/op-cpu [0ms - 48ms]
+fsyncfile2           467ops        8ops/s   0.0mb/s     68.1ms/op     3062us/op-cpu [1ms - 1021ms]
+appendfilerand2      468ops        8ops/s   0.0mb/s      0.1ms/op     1132us/op-cpu [0ms - 21ms]
+createfile2          469ops        8ops/s   0.0mb/s      2.9ms/op      832us/op-cpu [0ms - 248ms]
+deletefile1          472ops        8ops/s   0.0mb/s      7.9ms/op     1314us/op-cpu [0ms - 673ms]
+ 2890: 86.409: IO Summary:  6035 ops, 100.574 ops/s, (15/16 r/w),   0.3mb/s,  64642us cpu/op,  33.3ms latency
+ 2890: 86.409: Shutting down processes

@@ -1,0 +1,28 @@
+Filebench Version 1.4.9.1
+ 4427: 0.000: Allocated 170MB of shared memory
+ 4427: 0.004: File-server Version 3.0 personality successfully loaded
+ 4427: 0.004: Creating/pre-allocating files and filesets
+ 4427: 0.012: Fileset bigfileset: 10000 files, 0 leafdirs, avg dir width = 20, avg dir depth = 3.1, 1240.757MB
+ 4427: 0.090: Removed any existing fileset bigfileset in 1 seconds
+ 4427: 0.090: making tree for filset /tmp/bigfileset
+ 4427: 0.109: Creating fileset bigfileset...
+ 4427: 1.098: Preallocated 7979 of 10000 of fileset bigfileset in 1 seconds
+ 4427: 1.098: waiting for fileset pre-allocation to finish
+ 4430: 1.098: Starting 1 filereader instances
+ 4431: 1.100: Starting 50 filereaderthread threads
+ 4427: 2.101: Running...
+ 4427: 62.105: Run took 60 seconds...
+ 4427: 62.109: Per-Operation Breakdown
+statfile1            22217ops      370ops/s   0.0mb/s      0.0ms/op     1663us/op-cpu [0ms - 1ms]
+deletefile1          22219ops      370ops/s   0.0mb/s     69.6ms/op     4793us/op-cpu [0ms - 7218ms]
+closefile3           22223ops      370ops/s   0.0mb/s      0.0ms/op     1543us/op-cpu [0ms - 1ms]
+readfile1            22227ops      370ops/s  47.6mb/s      0.1ms/op     1557us/op-cpu [0ms - 288ms]
+openfile2            22229ops      370ops/s   0.0mb/s      0.1ms/op     1579us/op-cpu [0ms - 55ms]
+closefile2           22230ops      370ops/s   0.0mb/s      0.0ms/op     1427us/op-cpu [0ms - 1ms]
+appendfilerand1      22241ops      371ops/s   2.9mb/s      0.0ms/op     1471us/op-cpu [0ms - 87ms]
+openfile1            22243ops      371ops/s   0.0mb/s      0.1ms/op     1636us/op-cpu [0ms - 70ms]
+closefile1           22249ops      371ops/s   0.0mb/s      0.0ms/op     1564us/op-cpu [0ms - 1ms]
+wrtfile1             22256ops      371ops/s  45.8mb/s      0.1ms/op     1801us/op-cpu [0ms - 55ms]
+createfile1          22257ops      371ops/s   0.0mb/s     25.3ms/op     2889us/op-cpu [0ms - 7219ms]
+ 4427: 62.109: IO Summary: 244591 ops, 4076.284 ops/s, (370/742 r/w),  96.3mb/s,   1240us cpu/op,  31.8ms latency
+ 4427: 62.109: Shutting down processes

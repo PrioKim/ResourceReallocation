@@ -1,0 +1,28 @@
+Filebench Version 1.4.9.1
+16936: 0.000: Allocated 170MB of shared memory
+16936: 0.006: File-server Version 3.0 personality successfully loaded
+16936: 0.006: Creating/pre-allocating files and filesets
+16936: 0.017: Fileset bigfileset: 10000 files, 0 leafdirs, avg dir width = 20, avg dir depth = 3.1, 1240.757MB
+16936: 0.071: Removed any existing fileset bigfileset in 1 seconds
+16936: 0.071: making tree for filset /tmp/bigfileset
+16936: 0.095: Creating fileset bigfileset...
+16936: 1.078: Preallocated 7979 of 10000 of fileset bigfileset in 1 seconds
+16936: 1.079: waiting for fileset pre-allocation to finish
+16939: 1.083: Starting 1 filereader instances
+16940: 1.084: Starting 50 filereaderthread threads
+16936: 2.790: Running...
+16936: 62.797: Run took 60 seconds...
+16936: 62.799: Per-Operation Breakdown
+statfile1            29107ops      485ops/s   0.0mb/s      0.0ms/op     1664us/op-cpu [0ms - 2ms]
+deletefile1          29107ops      485ops/s   0.0mb/s     28.4ms/op     2796us/op-cpu [0ms - 6173ms]
+closefile3           29157ops      486ops/s   0.0mb/s      0.0ms/op     1612us/op-cpu [0ms - 3ms]
+readfile1            29157ops      486ops/s  62.6mb/s      0.1ms/op     1708us/op-cpu [0ms - 51ms]
+openfile2            29157ops      486ops/s   0.0mb/s      0.1ms/op     1691us/op-cpu [0ms - 33ms]
+closefile2           29157ops      486ops/s   0.0mb/s      0.0ms/op     1506us/op-cpu [0ms - 3ms]
+appendfilerand1      29157ops      486ops/s   3.8mb/s      0.0ms/op     1660us/op-cpu [0ms - 74ms]
+openfile1            29157ops      486ops/s   0.0mb/s      0.1ms/op     1714us/op-cpu [0ms - 27ms]
+closefile1           29157ops      486ops/s   0.0mb/s      0.0ms/op     1736us/op-cpu [0ms - 2ms]
+wrtfile1             29157ops      486ops/s  60.7mb/s      0.1ms/op     1782us/op-cpu [0ms - 58ms]
+createfile1          29157ops      486ops/s   0.0mb/s     18.4ms/op     2416us/op-cpu [0ms - 6182ms]
+16936: 62.799: IO Summary: 320627 ops, 5343.288 ops/s, (486/972 r/w), 127.1mb/s,   1374us cpu/op,  15.7ms latency
+16936: 62.799: Shutting down processes

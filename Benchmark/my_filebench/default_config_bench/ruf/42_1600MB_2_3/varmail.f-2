@@ -1,0 +1,30 @@
+Filebench Version 1.4.9.1
+ 2773: 0.000: Allocated 170MB of shared memory
+ 2773: 0.005: Varmail Version 3.0 personality successfully loaded
+ 2773: 0.005: Creating/pre-allocating files and filesets
+ 2773: 0.006: Fileset bigfileset: 1000 files, 0 leafdirs, avg dir width = 1000000, avg dir depth = 0.5, 14.959MB
+ 2773: 0.054: Removed any existing fileset bigfileset in 1 seconds
+ 2773: 0.054: making tree for filset /tmp/bigfileset
+ 2773: 0.054: Creating fileset bigfileset...
+ 2773: 0.099: Preallocated 805 of 1000 of fileset bigfileset in 1 seconds
+ 2773: 0.099: waiting for fileset pre-allocation to finish
+ 2776: 0.108: Starting 1 filereader instances
+ 2777: 0.125: Starting 16 filereaderthread threads
+ 2773: 1.125: Running...
+ 2773: 61.140: Run took 60 seconds...
+ 2773: 61.140: Per-Operation Breakdown
+closefile4           38136ops      635ops/s   0.0mb/s      0.0ms/op      214us/op-cpu [0ms - 2ms]
+readfile4            38136ops      635ops/s   9.9mb/s      0.0ms/op      227us/op-cpu [0ms - 5ms]
+openfile4            38136ops      635ops/s   0.0mb/s      0.0ms/op      212us/op-cpu [0ms - 3ms]
+closefile3           38139ops      636ops/s   0.0mb/s      0.0ms/op      229us/op-cpu [0ms - 18ms]
+fsyncfile3           38139ops      636ops/s   0.0mb/s      7.5ms/op     4127us/op-cpu [0ms - 396ms]
+appendfilerand3      38139ops      636ops/s   4.9mb/s      0.0ms/op      234us/op-cpu [0ms - 10ms]
+readfile3            38139ops      636ops/s  10.1mb/s      0.0ms/op      243us/op-cpu [0ms - 13ms]
+openfile3            38140ops      636ops/s   0.0mb/s      0.0ms/op      215us/op-cpu [0ms - 4ms]
+closefile2           38140ops      636ops/s   0.0mb/s      0.0ms/op      222us/op-cpu [0ms - 0ms]
+fsyncfile2           38141ops      636ops/s   0.0mb/s      8.7ms/op     5142us/op-cpu [1ms - 387ms]
+appendfilerand2      38147ops      636ops/s   5.0mb/s      0.0ms/op      242us/op-cpu [0ms - 3ms]
+createfile2          38149ops      636ops/s   0.0mb/s      0.1ms/op      289us/op-cpu [0ms - 7ms]
+deletefile1          38151ops      636ops/s   0.0mb/s      0.4ms/op      444us/op-cpu [0ms - 43ms]
+ 2773: 61.140: IO Summary: 495832 ops, 8261.990 ops/s, (1271/1271 r/w),  29.9mb/s,    496us cpu/op,   4.2ms latency
+ 2773: 61.140: Shutting down processes

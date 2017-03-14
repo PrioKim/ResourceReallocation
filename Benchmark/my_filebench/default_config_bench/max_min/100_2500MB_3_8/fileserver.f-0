@@ -1,0 +1,28 @@
+Filebench Version 1.4.9.1
+ 2200: 0.000: Allocated 170MB of shared memory
+ 2200: 0.004: File-server Version 3.0 personality successfully loaded
+ 2200: 0.004: Creating/pre-allocating files and filesets
+ 2200: 0.012: Fileset bigfileset: 10000 files, 0 leafdirs, avg dir width = 20, avg dir depth = 3.1, 1240.757MB
+ 2200: 0.064: Removed any existing fileset bigfileset in 1 seconds
+ 2200: 0.065: making tree for filset /tmp/bigfileset
+ 2200: 0.086: Creating fileset bigfileset...
+ 2200: 1.209: Preallocated 7979 of 10000 of fileset bigfileset in 2 seconds
+ 2200: 1.209: waiting for fileset pre-allocation to finish
+ 2203: 1.219: Starting 1 filereader instances
+ 2204: 1.246: Starting 50 filereaderthread threads
+ 2200: 2.498: Running...
+ 2200: 62.503: Run took 60 seconds...
+ 2200: 62.506: Per-Operation Breakdown
+statfile1            22161ops      369ops/s   0.0mb/s      0.0ms/op     1709us/op-cpu [0ms - 16ms]
+deletefile1          22161ops      369ops/s   0.0mb/s     56.3ms/op     3559us/op-cpu [0ms - 4026ms]
+closefile3           22190ops      370ops/s   0.0mb/s      0.0ms/op     1512us/op-cpu [0ms - 1ms]
+readfile1            22190ops      370ops/s  47.6mb/s      0.1ms/op     1757us/op-cpu [0ms - 87ms]
+openfile2            22190ops      370ops/s   0.0mb/s      0.2ms/op     1785us/op-cpu [0ms - 32ms]
+closefile2           22190ops      370ops/s   0.0mb/s      0.0ms/op     1466us/op-cpu [0ms - 1ms]
+appendfilerand1      22190ops      370ops/s   2.9mb/s      0.0ms/op     1745us/op-cpu [0ms - 45ms]
+openfile1            22190ops      370ops/s   0.0mb/s      0.2ms/op     1825us/op-cpu [0ms - 38ms]
+closefile1           22190ops      370ops/s   0.0mb/s      0.0ms/op     1665us/op-cpu [0ms - 26ms]
+wrtfile1             22190ops      370ops/s  46.0mb/s      0.1ms/op     1940us/op-cpu [0ms - 60ms]
+createfile1          22190ops      370ops/s   0.0mb/s     24.4ms/op     2925us/op-cpu [0ms - 4036ms]
+ 2200: 62.506: IO Summary: 244032 ops, 4066.853 ops/s, (370/740 r/w),  96.6mb/s,   1689us cpu/op,  27.1ms latency
+ 2200: 62.506: Shutting down processes

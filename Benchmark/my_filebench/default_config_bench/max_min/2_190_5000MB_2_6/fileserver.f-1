@@ -1,0 +1,34 @@
+Filebench Version 1.4.9.1
+ 3337: 0.000: Allocated 170MB of shared memory
+ 3337: 0.237: File-server Version 3.0 personality successfully loaded
+ 3337: 0.237: Creating/pre-allocating files and filesets
+ 3337: 0.344: Fileset bigfileset: 10000 files, 0 leafdirs, avg dir width = 20, avg dir depth = 3.1, 1240.757MB
+ 3337: 3.207: Removed any existing fileset bigfileset in 3 seconds
+ 3337: 3.207: making tree for filset /tmp/bigfileset
+ 3337: 3.736: Creating fileset bigfileset...
+ 3337: 76.099: Preallocated 7979 of 10000 of fileset bigfileset in 73 seconds
+ 3337: 76.099: waiting for fileset pre-allocation to finish
+ 3340: 77.038: Starting 1 filereader instances
+ 3341: 78.278: Starting 50 filereaderthread threads
+ 3337: 89.040: Waiting for pid 3341 thread filereaderthread-1
+ 3337: 90.040: Waiting for pid 3341 thread filereaderthread-1
+ 3337: 99.040: Waiting for pid 3341 thread filereaderthread-50
+ 3337: 100.040: Waiting for pid 3341 thread filereaderthread-50
+ 3337: 111.041: Waiting for pid 3341 thread filereaderthread-47
+ 3337: 112.041: Waiting for pid 3341 thread filereaderthread-47
+ 3337: 115.042: Running...
+ 3337: 175.047: Run took 60 seconds...
+ 3337: 175.050: Per-Operation Breakdown
+statfile1            1412ops       24ops/s   0.0mb/s      1.3ms/op     1126us/op-cpu [0ms - 1147ms]
+deletefile1          1411ops       24ops/s   0.0mb/s     47.2ms/op     3600us/op-cpu [0ms - 1563ms]
+closefile3           1432ops       24ops/s   0.0mb/s      0.0ms/op     1208us/op-cpu [0ms - 2ms]
+readfile1            1432ops       24ops/s   2.8mb/s     61.0ms/op     5349us/op-cpu [0ms - 1957ms]
+openfile2            1446ops       24ops/s   0.0mb/s      6.9ms/op     1943us/op-cpu [0ms - 1185ms]
+closefile2           1446ops       24ops/s   0.0mb/s      0.0ms/op     1314us/op-cpu [0ms - 1ms]
+appendfilerand1      1446ops       24ops/s   0.2mb/s     78.5ms/op     6217us/op-cpu [0ms - 2432ms]
+openfile1            1453ops       24ops/s   0.0mb/s      8.4ms/op     2037us/op-cpu [0ms - 800ms]
+closefile1           1453ops       24ops/s   0.0mb/s      0.1ms/op     1074us/op-cpu [0ms - 57ms]
+wrtfile1             1454ops       24ops/s   3.0mb/s      7.6ms/op     1926us/op-cpu [0ms - 2285ms]
+createfile1          1454ops       24ops/s   0.0mb/s     42.5ms/op     3239us/op-cpu [0ms - 2017ms]
+ 3337: 175.050: IO Summary: 15839 ops, 263.959 ops/s, (24/48 r/w),   6.0mb/s,  27657us cpu/op,  84.1ms latency
+ 3337: 175.050: Shutting down processes
