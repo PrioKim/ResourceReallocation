@@ -1,7 +1,7 @@
 #pragma once
 #include "struct.h"
 
-#define LOGTIME 3
+#define LOGTIME 1
 
 typedef struct CPU_info{
 	 char cpu_name[8];

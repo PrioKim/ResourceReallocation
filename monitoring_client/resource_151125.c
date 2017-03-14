@@ -77,7 +77,7 @@ int _get_cpu_info(s_CPU * cpu_info)
 
 	fclose(fp);
 	
-	printf("cpu_name : %s \n", cpu_info->cpu_name);
+	//printf("cpu_name : %s \n", cpu_info->cpu_name);
 
 	if(ret < 4)
 		return -1;
