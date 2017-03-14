@@ -25,6 +25,9 @@ sync
 
 filebench -f "$workload" > tmp_result
 
+pid=`ps -ef | grep take_time_client | grep -v grep | awk '{print $2}'`
+kill -9 $pid
+
 summary=`cat tmp_result | grep "IO Summary"`
 summary_path=$dirname'/results'
 bandwidth=`cat tmp_result | grep "IO Summary" | awk '{print $11}'`
@@ -33,3 +36,4 @@ bandwidth_path=$dirname'/bandwidths'
 echo $summary >> $summary_path
 echo $bandwidth >> $bandwidth_path
 echo $bandwidth
+
