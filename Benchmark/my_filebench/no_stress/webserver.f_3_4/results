@@ -1,0 +1,2 @@
+2178: 61.798: IO Summary: 864754 ops, 14411.451 ops/s, (4649/466 r/w), 72.2mb/s, 276us cpu/op, 0.0ms latency
+2323: 61.296: IO Summary: 865214 ops, 14418.968 ops/s, (4651/466 r/w), 72.3mb/s, 275us cpu/op, 0.0ms latency

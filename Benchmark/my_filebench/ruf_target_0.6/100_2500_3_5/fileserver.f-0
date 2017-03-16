@@ -1,0 +1,28 @@
+Filebench Version 1.4.9.1
+ 2205: 0.000: Allocated 170MB of shared memory
+ 2205: 0.004: File-server Version 3.0 personality successfully loaded
+ 2205: 0.004: Creating/pre-allocating files and filesets
+ 2205: 0.012: Fileset bigfileset: 10000 files, 0 leafdirs, avg dir width = 20, avg dir depth = 3.1, 1240.757MB
+ 2205: 0.434: Removed any existing fileset bigfileset in 1 seconds
+ 2205: 0.435: making tree for filset /tmp/bigfileset
+ 2205: 0.458: Creating fileset bigfileset...
+ 2205: 1.654: Preallocated 7979 of 10000 of fileset bigfileset in 2 seconds
+ 2205: 1.654: waiting for fileset pre-allocation to finish
+ 2208: 1.654: Starting 1 filereader instances
+ 2209: 1.656: Starting 50 filereaderthread threads
+ 2205: 2.657: Running...
+ 2205: 62.662: Run took 60 seconds...
+ 2205: 62.664: Per-Operation Breakdown
+statfile1            14979ops      250ops/s   0.0mb/s      0.0ms/op     1728us/op-cpu [0ms - 20ms]
+deletefile1          14980ops      250ops/s   0.0mb/s     76.2ms/op     4485us/op-cpu [0ms - 5335ms]
+closefile3           14980ops      250ops/s   0.0mb/s      0.0ms/op     1463us/op-cpu [0ms - 7ms]
+readfile1            14980ops      250ops/s  32.0mb/s      0.1ms/op     1859us/op-cpu [0ms - 59ms]
+openfile2            14980ops      250ops/s   0.0mb/s      0.3ms/op     1895us/op-cpu [0ms - 41ms]
+closefile2           14980ops      250ops/s   0.0mb/s      0.0ms/op     1536us/op-cpu [0ms - 14ms]
+appendfilerand1      14980ops      250ops/s   1.9mb/s      0.0ms/op     1845us/op-cpu [0ms - 19ms]
+openfile1            14989ops      250ops/s   0.0mb/s      0.3ms/op     2108us/op-cpu [0ms - 32ms]
+closefile1           15000ops      250ops/s   0.0mb/s      0.0ms/op     1750us/op-cpu [0ms - 40ms]
+wrtfile1             15013ops      250ops/s  31.0mb/s      0.1ms/op     1940us/op-cpu [0ms - 64ms]
+createfile1          15028ops      250ops/s   0.0mb/s     61.8ms/op     4187us/op-cpu [0ms - 5337ms]
+ 2205: 62.664: IO Summary: 164889 ops, 2747.962 ops/s, (250/500 r/w),  65.0mb/s,   2671us cpu/op,  46.3ms latency
+ 2205: 62.664: Shutting down processes

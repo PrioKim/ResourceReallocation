@@ -1,0 +1,2 @@
+2083: 63.020: IO Summary: 189448 ops, 3156.832 ops/s, (287/574 r/w), 74.4mb/s, 550us cpu/op, 37.3ms latency
+2086: 62.492: IO Summary: 179326 ops, 2988.349 ops/s, (272/544 r/w), 70.4mb/s, 571us cpu/op, 37.5ms latency

@@ -21,7 +21,7 @@ argc=$#
 
 if [ 1 -ne $argc ]
 then
-	echo "Please input the stree parameter (by one string)"
+	echo "Please input the stress parameter (by one string)"
 	exit
 fi
 
